@@ -1,6 +1,6 @@
 import dotenv from 'dotenv';
-dotenv.config()
 
+dotenv.config()
 
 export default {
   mongo_uri: process.env.MONGO_URI || "mongodb://localhost:27017/test",

@@ -11,8 +11,6 @@ export const intiateDataSource = (entities: any[]) => {
     entities: entities
   })
 
-
-
   AppDataSource.initialize()
     .then(() => {
       logger.info("Data Source has been initialized!")

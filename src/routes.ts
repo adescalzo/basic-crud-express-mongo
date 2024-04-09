@@ -7,5 +7,4 @@ const router = Router();
 router.use('/users', userController);
 router.use("/auth", authController)
 
-
 export default router;

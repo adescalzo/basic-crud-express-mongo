@@ -8,8 +8,7 @@ import logger from './utils/logger';
 import { errorMiddleware } from './utils/middlewares/error';
 import { extractUser } from "./utils/middlewares/auth"
 import "./data-source"
-
-
+import "./wa-message/wa-message.consumer";
 
 const app = express();
 const port = 3000;
@@ -22,7 +21,6 @@ app.use(cors());
 app.use(helmet());
 app.use(morgan('combined'));
 app.use(extractUser)
-
 
 app.get('/', (req, res) => {
   res.send('Hello World!');
